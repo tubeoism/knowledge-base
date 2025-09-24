@@ -31,6 +31,28 @@
             font-weight: 600;
         }
 
+        /* --- Search Input Styling --- */
+        .search-container {
+            margin-bottom: 25px;
+        }
+
+        #search-input {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #search-input:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+
+
         /* --- Table Styling --- */
         .contractor-table {
             width: 100%;
@@ -79,7 +101,7 @@
             color: #555;
         }
         
-        .loading-message td, .error-message td {
+        .loading-message td, .error-message td, .no-results-message td {
             text-align: center;
             padding: 40px;
             color: #777;
@@ -139,6 +161,10 @@
     <div class="container">
         <h1>Danh sách các nhà thầu nước ngoài đã đăng ký</h1>
 
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Tìm kiếm theo Tên công ty hoặc Mã số thuế...">
+        </div>
+
         <table class="contractor-table">
             <thead>
                 <tr>
@@ -158,56 +184,71 @@
     </div>
 
     <script>
-        // Wait for the DOM to be fully loaded before running the script
         document.addEventListener('DOMContentLoaded', function() {
             const tableBody = document.getElementById('contractor-body');
+            const searchInput = document.getElementById('search-input');
+            let allContractors = []; // Variable to store the full list of contractors
 
-            // Fetch the JSON file. 
-            // This assumes 'registered_contractors.json' is in the same directory as this HTML file.
+            /**
+             * Renders the contractor data into the table.
+             * @param {Array} dataToRender - The array of contractor objects to display.
+             */
+            function renderTable(dataToRender) {
+                tableBody.innerHTML = ''; // Clear existing table rows
+
+                if (Array.isArray(dataToRender) && dataToRender.length > 0) {
+                    dataToRender.forEach(contractor => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td data-label="STT">${contractor['No.'] || ''}</td>
+                            <td data-label="Mã số thuế">${contractor['Tax code'] || ''}</td>
+                            <td data-label="Tên công ty">${contractor['Company Name'] || ''}</td>
+                            <td data-label="Ngày cấp">${contractor['Issuance Date'] || ''}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                } else {
+                    // Display a message if there are no results
+                    tableBody.innerHTML = `<tr class="no-results-message"><td colspan="4">Không tìm thấy kết quả phù hợp.</td></tr>`;
+                }
+            }
+
+            // Fetch the JSON file from the server
             fetch('registered_contractors.json')
                 .then(response => {
-                    // Check if the request was successful
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);
                     }
-                    // Parse the JSON data from the response
                     return response.json();
                 })
                 .then(data => {
-                    // Clear the "Loading..." message
-                    tableBody.innerHTML = '';
-
-                    // Check if data is an array and not empty
-                    if (Array.isArray(data) && data.length > 0) {
-                        // Loop through each contractor object in the data array
-                        data.forEach(contractor => {
-                            // Create a new table row element
-                            const row = document.createElement('tr');
-
-                            // Create and append cells for each piece of data
-                            // The keys like 'No.', 'Tax code' must match the keys in your JSON file.
-                            row.innerHTML = `
-                                <td data-label="STT">${contractor['No.'] || ''}</td>
-                                <td data-label="Mã số thuế">${contractor['Tax code'] || ''}</td>
-                                <td data-label="Tên công ty">${contractor['Company Name'] || ''}</td>
-                                <td data-label="Ngày cấp">${contractor['Issuance Date'] || ''}</td>
-                            `;
-
-                            // Append the newly created row to the table body
-                            tableBody.appendChild(row);
-                        });
-                    } else {
-                         // Handle case where data is empty or not an array
-                        tableBody.innerHTML = `<tr class="error-message"><td colspan="4">Không có dữ liệu để hiển thị.</td></tr>`;
-                    }
+                    allContractors = data; // Store the fetched data
+                    renderTable(allContractors); // Initial render of the full list
                 })
                 .catch(error => {
-                    // If an error occurs during fetch, display an error message
                     console.error('Error fetching or parsing data:', error);
                     tableBody.innerHTML = `<tr class="error-message"><td colspan="4">Không thể tải dữ liệu. Vui lòng kiểm tra lại file 'registered_contractors.json'.</td></tr>`;
                 });
+
+            // Add an event listener to the search input field
+            searchInput.addEventListener('input', () => {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+
+                // Filter the 'allContractors' array based on the search term
+                const filteredData = allContractors.filter(contractor => {
+                    const companyName = contractor['Company Name']?.toLowerCase() || '';
+                    const taxCode = contractor['Tax code']?.toLowerCase() || '';
+                    
+                    // Return true if either company name or tax code includes the search term
+                    return companyName.includes(searchTerm) || taxCode.includes(searchTerm);
+                });
+
+                // Re-render the table with the filtered data
+                renderTable(filteredData);
+            });
         });
     </script>
 
 </body>
 </html>
+
