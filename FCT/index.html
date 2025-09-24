@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách Nhà thầu Đã đăng ký</title>
+    <title>Danh sách Nhà thầu Đã đăng ký (Tự động tải)</title>
     <!-- Tích hợp Tailwind CSS để giao diện đẹp hơn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -55,10 +55,12 @@
                 const tr = document.createElement('tr');
                 tr.className = 'hover:bg-gray-50';
                 
+                // QUAN TRỌNG: Hãy đảm bảo các key bên dưới (ví dụ: 'Company')
+                // khớp chính xác với key trong file JSON của bạn sau khi kiểm tra bằng console.
                 const no = row['No.'] || '';
-                const taxCode = row['Tax code'] || '';
-                const company = row['Company'] || '';
-                const dateIssue = row['Date Issue'] || '';
+                const taxCode = row['Tax Code'] || '';
+                const company = row['Company Name'] || '';
+                const dateIssue = row['Issuance Date'] || '';
                 
                 tr.innerHTML = `
                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${no}</td>
@@ -81,19 +83,23 @@
             // Sử dụng fetch API để tải file JSON từ cùng thư mục
             fetch(jsonFilePath)
                 .then(response => {
-                    // Nếu response không thành công (ví dụ: lỗi 404 Not Found), ném ra lỗi
                     if (!response.ok) {
                         throw new Error(`Lỗi HTTP! Trạng thái: ${response.status}`);
                     }
-                    // Phân tích response thành JSON
                     return response.json();
                 })
                 .then(data => {
+                    // --- BƯỚC GỠ LỖI: In các key từ file JSON ra console ---
+                    // Mở console của trình duyệt (nhấn F12) để xem kết quả.
+                    if (data && data.length > 0) {
+                        console.log("Các key tìm thấy trong file JSON:", Object.keys(data[0]));
+                    }
+                    // --------------------------------------------------------
+                    
                     // Gọi hàm để hiển thị dữ liệu lên bảng
                     displayData(data);
                 })
                 .catch(error => {
-                    // Xử lý lỗi nếu không tải được file hoặc file không phải là JSON hợp lệ
                     tableBody.innerHTML = `<tr><td colspan="4" class="text-center py-10 text-red-500">Không thể tải dữ liệu. Vui lòng kiểm tra lại file '${jsonFilePath}' có tồn tại và đúng định dạng không.</td></tr>`;
                     console.error('Đã xảy ra lỗi khi tải file JSON:', error);
                 });
@@ -102,4 +108,3 @@
 
 </body>
 </html>
-
