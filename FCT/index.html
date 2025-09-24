@@ -3,105 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh sách Nhà thầu Đã đăng ký (Tự động tải)</title>
-    <!-- Tích hợp Tailwind CSS để giao diện đẹp hơn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Danh sách Nhà thầu Nước ngoài (Tải động)</title>
     <style>
+        /* --- General Styling --- */
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+
+        /* --- Container for the content --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        /* --- Table Styling --- */
+        .contractor-table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .contractor-table th,
+        .contractor-table td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        /* Table Header */
+        .contractor-table thead {
+            background-color: #3498db;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        .contractor-table thead th {
+            font-weight: 600;
+        }
+
+        /* Table Body */
+        .contractor-table tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+            transition: background-color 0.3s ease;
+        }
+
+        .contractor-table tbody tr:nth-of-type(even) {
+            background-color: #f8f9fa;
+        }
+
+        .contractor-table tbody tr:last-of-type {
+            border-bottom: 2px solid #3498db;
+        }
+
+        .contractor-table tbody tr:hover {
+            background-color: #e9f5ff;
+            cursor: pointer;
+        }
+        
+        .contractor-table td {
+            color: #555;
+        }
+        
+        .loading-message td, .error-message td {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+            font-style: italic;
+        }
+        
+        .error-message td {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        /* --- Responsive Design for smaller screens --- */
+        @media screen and (max-width: 768px) {
+            .contractor-table thead {
+                display: none; /* Hide table header on mobile */
+            }
+
+            .contractor-table, .contractor-table tbody, .contractor-table tr, .contractor-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .contractor-table tr {
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+
+            .contractor-table td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+                border: none;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .contractor-table tr:last-child td:last-child,
+            .contractor-table td:last-child {
+                border-bottom: none;
+            }
+
+            .contractor-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                width: calc(50% - 30px);
+                text-align: left;
+                font-weight: bold;
+                color: #333;
+            }
         }
     </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+<body>
 
-    <div class="w-full max-w-4xl bg-white rounded-lg shadow-md p-6 md:p-8">
-        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">Danh sách Nhà thầu Đã đăng ký</h1>
+    <div class="container">
+        <h1>Danh sách các nhà thầu nước ngoài đã đăng ký</h1>
 
-        <!-- Bảng hiển thị dữ liệu -->
-        <div class="overflow-x-auto">
-            <table class="min-w-full bg-white border border-gray-200">
-                <thead class="bg-gray-50">
-                    <tr>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No.</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tax Code</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Company Name</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Issuance Date</th>
-                    </tr>
-                </thead>
-                <!-- Dữ liệu từ JSON sẽ được chèn vào đây bằng JavaScript -->
-                <tbody id="contractor-table-body" class="bg-white divide-y divide-gray-200">
-                    <!-- Nội dung sẽ được điền tự động -->
-                </tbody>
-            </table>
-        </div>
+        <table class="contractor-table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã số thuế</th>
+                    <th>Tên công ty</th>
+                    <th>Ngày cấp</th>
+                </tr>
+            </thead>
+            <tbody id="contractor-body">
+                <!-- Data will be loaded here by JavaScript -->
+                <tr class="loading-message">
+                    <td colspan="4">Đang tải dữ liệu...</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <script>
-        /**
-         * Hàm này hiển thị dữ liệu đã phân tích lên bảng HTML.
-         * @param {Array<Object>} data - Dữ liệu từ file JSON.
-         */
-        function displayData(data) {
-            const tableBody = document.getElementById('contractor-table-body');
-            tableBody.innerHTML = ''; // Xóa nội dung cũ
+        // Wait for the DOM to be fully loaded before running the script
+        document.addEventListener('DOMContentLoaded', function() {
+            const tableBody = document.getElementById('contractor-body');
 
-            if (!data || !Array.isArray(data) || data.length === 0) {
-                tableBody.innerHTML = '<tr><td colspan="4" class="text-center py-10 text-gray-500">Không có dữ liệu để hiển thị.</td></tr>';
-                return;
-            }
-
-            data.forEach(row => {
-                const tr = document.createElement('tr');
-                tr.className = 'hover:bg-gray-50';
-                
-                // QUAN TRỌNG: Hãy đảm bảo các key bên dưới (ví dụ: 'Company')
-                // khớp chính xác với key trong file JSON của bạn sau khi kiểm tra bằng console.
-                const no = row['No.'] || '';
-                const taxCode = row['Tax Code'] || '';
-                const company = row['Company Name'] || '';
-                const dateIssue = row['Issuance Date'] || '';
-                
-                tr.innerHTML = `
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${no}</td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${taxCode}</td>
-                    <td class="px-6 py-4 whitespace-normal text-sm font-medium text-gray-900">${company}</td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${dateIssue}</td>
-                `;
-                tableBody.appendChild(tr);
-            });
-        }
-
-        // Chạy các hàm khi trang được tải xong
-        document.addEventListener('DOMContentLoaded', () => {
-            const tableBody = document.getElementById('contractor-table-body');
-            const jsonFilePath = 'registered_contractors.json';
-
-            // Hiển thị thông báo đang tải
-            tableBody.innerHTML = '<tr><td colspan="4" class="text-center py-10 text-gray-500">Đang tải dữ liệu...</td></tr>';
-
-            // Sử dụng fetch API để tải file JSON từ cùng thư mục
-            fetch(jsonFilePath)
+            // Fetch the JSON file. 
+            // This assumes 'registered_contractors.json' is in the same directory as this HTML file.
+            fetch('registered_contractors.json')
                 .then(response => {
+                    // Check if the request was successful
                     if (!response.ok) {
-                        throw new Error(`Lỗi HTTP! Trạng thái: ${response.status}`);
+                        throw new Error(`HTTP error! status: ${response.status}`);
                     }
+                    // Parse the JSON data from the response
                     return response.json();
                 })
                 .then(data => {
-                    // --- BƯỚC GỠ LỖI: In các key từ file JSON ra console ---
-                    // Mở console của trình duyệt (nhấn F12) để xem kết quả.
-                    if (data && data.length > 0) {
-                        console.log("Các key tìm thấy trong file JSON:", Object.keys(data[0]));
+                    // Clear the "Loading..." message
+                    tableBody.innerHTML = '';
+
+                    // Check if data is an array and not empty
+                    if (Array.isArray(data) && data.length > 0) {
+                        // Loop through each contractor object in the data array
+                        data.forEach(contractor => {
+                            // Create a new table row element
+                            const row = document.createElement('tr');
+
+                            // Create and append cells for each piece of data
+                            // The keys like 'No.', 'Tax code' must match the keys in your JSON file.
+                            row.innerHTML = `
+                                <td data-label="STT">${contractor['No.'] || ''}</td>
+                                <td data-label="Mã số thuế">${contractor['Tax code'] || ''}</td>
+                                <td data-label="Tên công ty">${contractor['Company Name'] || ''}</td>
+                                <td data-label="Ngày cấp">${contractor['Issuance Date'] || ''}</td>
+                            `;
+
+                            // Append the newly created row to the table body
+                            tableBody.appendChild(row);
+                        });
+                    } else {
+                         // Handle case where data is empty or not an array
+                        tableBody.innerHTML = `<tr class="error-message"><td colspan="4">Không có dữ liệu để hiển thị.</td></tr>`;
                     }
-                    // --------------------------------------------------------
-                    
-                    // Gọi hàm để hiển thị dữ liệu lên bảng
-                    displayData(data);
                 })
                 .catch(error => {
-                    tableBody.innerHTML = `<tr><td colspan="4" class="text-center py-10 text-red-500">Không thể tải dữ liệu. Vui lòng kiểm tra lại file '${jsonFilePath}' có tồn tại và đúng định dạng không.</td></tr>`;
-                    console.error('Đã xảy ra lỗi khi tải file JSON:', error);
+                    // If an error occurs during fetch, display an error message
+                    console.error('Error fetching or parsing data:', error);
+                    tableBody.innerHTML = `<tr class="error-message"><td colspan="4">Không thể tải dữ liệu. Vui lòng kiểm tra lại file 'registered_contractors.json'.</td></tr>`;
                 });
         });
     </script>
