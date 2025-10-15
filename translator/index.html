@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Trình dịch tệp</h1>
+    <p>Cung cấp bởi Azure Translator</p>
+
+    <div class="container">
+        <div class="controls">
+            <input type="file" id="fileInput" accept=".txt,.pdf">
+            <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="vi">Vietnamese</option>
+            </select>
+            <button id="translateButton">Dịch</button>
+        </div>
+        <p class="info">Chọn tệp văn bản (.txt) hoặc PDF (.pdf). Ngôn ngữ đầu vào (hỗ trợ Việt, Pháp, Nhật) sẽ được tự động phát hiện.</p>
+        <div class="output-container">
+            <h2>Văn bản đã dịch</h2>
+            <div id="loader" class="loader" style="display: none;"></div>
+            <pre id="outputText"></pre>
+        </div>
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>
