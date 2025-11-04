@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tư 99/2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .tab-container {
+            width: 100%;
+            margin: 20px 0;
+        }
+        .tab-buttons {
+            display: flex;
+            gap: 2px;
+            background: #f1f1f1;
+            border-bottom: 2px solid #ccc;
+        }
+        .tab-button {
+            background: inherit;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .tab-button:hover {
+            background: #ddd;
+        }
+        .tab-button.active {
+            background: #fff;
+            border-bottom: 2px solid #4CAF50;
+            margin-bottom: -2px;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        iframe {
+            width: 100%;
+            height: calc(100vh - 150px);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thông tư 99/2025</h1>
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab('main')">Nội dung chính</button>
+            <button class="tab-button" onclick="openTab('appendix1')">Phụ lục 1</button>
+            <button class="tab-button" onclick="openTab('appendix2')">Phụ lục 2</button>
+            <button class="tab-button" onclick="openTab('appendix3')">Phụ lục 3</button>
+            <button class="tab-button" onclick="openTab('appendix4')">Phụ lục 4</button>
+        </div>
+        <div id="main" class="tab-content active">
+            <iframe src="01_tt99_2025_main.md"></iframe>
+        </div>
+        <div id="appendix1" class="tab-content">
+            <iframe src="02_tt99_2025_appendix_1.md"></iframe>
+        </div>
+        <div id="appendix2" class="tab-content">
+            <iframe src="03_tt99_2025_appendix_2.md"></iframe>
+        </div>
+        <div id="appendix3" class="tab-content">
+            <iframe src="04_tt99_2025_appendix_3.md"></iframe>
+        </div>
+        <div id="appendix4" class="tab-content">
+            <iframe src="05_tt99_2025_appendix_4.md"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            // Hide all tab contents
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+
+            // Remove active class from all buttons
+            var tabButtons = document.getElementsByClassName("tab-button");
+            for (var i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            // Show the selected tab content and mark button as active
+            document.getElementById(tabName).classList.add("active");
+            event.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
