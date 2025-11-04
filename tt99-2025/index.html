@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thông tư 99/2025</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,14 +43,39 @@
             padding: 20px;
             border: 1px solid #ccc;
             border-top: none;
+            max-height: calc(100vh - 150px);
+            overflow-y: auto;
         }
         .tab-content.active {
             display: block;
         }
-        iframe {
+        .markdown-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .markdown-content table {
+            border-collapse: collapse;
             width: 100%;
-            height: calc(100vh - 150px);
-            border: none;
+            margin: 1em 0;
+        }
+        .markdown-content th, .markdown-content td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .markdown-content th {
+            background-color: #f5f5f5;
+        }
+        .markdown-content pre {
+            background-color: #f5f5f5;
+            padding: 1em;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .markdown-content code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 3px;
         }
     </style>
 </head>
@@ -64,39 +90,73 @@
             <button class="tab-button" onclick="openTab('appendix4')">Phụ lục 4</button>
         </div>
         <div id="main" class="tab-content active">
-            <iframe src="01_tt99_2025_main.md"></iframe>
+            <div class="markdown-content"></div>
         </div>
         <div id="appendix1" class="tab-content">
-            <iframe src="02_tt99_2025_appendix_1.md"></iframe>
+            <div class="markdown-content"></div>
         </div>
         <div id="appendix2" class="tab-content">
-            <iframe src="03_tt99_2025_appendix_2.md"></iframe>
+            <div class="markdown-content"></div>
         </div>
         <div id="appendix3" class="tab-content">
-            <iframe src="04_tt99_2025_appendix_3.md"></iframe>
+            <div class="markdown-content"></div>
         </div>
         <div id="appendix4" class="tab-content">
-            <iframe src="05_tt99_2025_appendix_4.md"></iframe>
+            <div class="markdown-content"></div>
         </div>
     </div>
 
     <script>
+        // Hàm để tải và hiển thị nội dung markdown
+        async function loadMarkdownContent(file, targetElement) {
+            try {
+                const response = await fetch(file);
+                const text = await response.text();
+                targetElement.innerHTML = marked.parse(text);
+            } catch (error) {
+                console.error('Error loading markdown:', error);
+                targetElement.innerHTML = '<p>Error loading content.</p>';
+            }
+        }
+
+        // Tải nội dung ban đầu
+        const files = {
+            'main': '01_tt99_2025_main.md',
+            'appendix1': '02_tt99_2025_appendix_1.md',
+            'appendix2': '03_tt99_2025_appendix_2.md',
+            'appendix3': '04_tt99_2025_appendix_3.md',
+            'appendix4': '05_tt99_2025_appendix_4.md'
+        };
+
+        // Tải nội dung cho tab đầu tiên
+        loadMarkdownContent(
+            files['main'],
+            document.querySelector('#main .markdown-content')
+        );
+
         function openTab(tabName) {
-            // Hide all tab contents
+            // Ẩn tất cả nội dung tab
             var tabContents = document.getElementsByClassName("tab-content");
             for (var i = 0; i < tabContents.length; i++) {
                 tabContents[i].classList.remove("active");
             }
 
-            // Remove active class from all buttons
+            // Bỏ active khỏi tất cả các nút
             var tabButtons = document.getElementsByClassName("tab-button");
             for (var i = 0; i < tabButtons.length; i++) {
                 tabButtons[i].classList.remove("active");
             }
 
-            // Show the selected tab content and mark button as active
-            document.getElementById(tabName).classList.add("active");
+            // Hiển thị tab được chọn và đánh dấu nút active
+            const tabContent = document.getElementById(tabName);
+            tabContent.classList.add("active");
             event.currentTarget.classList.add("active");
+
+            // Tải nội dung markdown nếu chưa được tải
+            const markdownContent = tabContent.querySelector('.markdown-content');
+            if (!markdownContent.innerHTML) {
+                loadMarkdownContent(files[tabName], markdownContent);
+            }
         }
     </script>
 </body>
