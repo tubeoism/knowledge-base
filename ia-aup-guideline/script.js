@@ -2,8 +2,8 @@ const markdownFiles = {
     'ban_hang': 'quy_trinh_ban_hang.md',
     'mua_hang': 'quy_trinh_mua_hang.md',
     'quan_ly_tai_san': 'quy_trinh_quan_ly_tai_san.md',
-    'quan_ly_tien': 'quy_trinh_quan_ly_tien.md'
-    'thue': 'quy_trinh_thue.md'
+    'quan_ly_tien': 'quy_trinh_quan_ly_tien.md',
+    'thue': 'quy_trinh_thue.md',
     'lao_dong': 'quy_trinh_lao_dong_va_tien_luong.md'
 };
 
