@@ -25,6 +25,7 @@ function openTab(evt, tabName) {
             }
 
             const markdownFile = evt.currentTarget.dataset.markdown;
+            console.log(`Fetching markdown file: ${markdownFile}`);
             if (!markdownFile) {
                 contentDiv.innerHTML = 'Error: No markdown file specified for this tab.';
                 return;
