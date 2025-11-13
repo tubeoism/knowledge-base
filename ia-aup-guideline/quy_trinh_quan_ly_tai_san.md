@@ -2,12 +2,18 @@
 
 ## I. Mục tiêu kiểm toán
 
-*   Đảm bảo tài sản cố định (TSCĐ) và tài sản khác là có thật, thuộc quyền sở hữu/quyền sử dụng lâu dài của doanh nghiệp và đang được sử dụng cho mục đích kinh doanh.
-*   Đảm bảo việc mua sắm, đầu tư, nâng cấp và thanh lý tài sản được phê duyệt đúng thẩm quyền và ghi nhận chính xác.
-*   Xác minh tài sản được ghi nhận đúng nguyên giá, phân loại đúng nhóm và áp dụng phương pháp khấu hao/phân bổ nhất quán, phù hợp.
-*   Đảm bảo sổ sách tài sản chi tiết khớp với sổ cái và kết quả kiểm kê thực tế.
-*   Phát hiện và ngăn chặn các sai sót trọng yếu hoặc rủi ro mất mát, hư hỏng, lạm dụng tài sản.
-*   Đảm bảo hệ thống kiểm soát nội bộ đối với toàn bộ vòng đời tài sản là hiệu quả.
+*   **Về các Cơ sở dẫn liệu BCTC (Financial Statement Assertions):**
+    *   **Hiện hữu & Quyền (Existence & Rights):** Đảm bảo tài sản ghi nhận trên sổ sách là có thật, thuộc quyền sở hữu hoặc quyền sử dụng lâu dài của doanh nghiệp, và đang được sử dụng cho hoạt động sản xuất kinh doanh.
+    *   **Đầy đủ (Completeness):** Đảm bảo tất cả tài sản hiện có của doanh nghiệp đều được ghi nhận đầy đủ.
+    *   **Đánh giá & Phân bổ (Valuation & Allocation):** Đảm bảo tài sản được ghi nhận đúng nguyên giá, được đánh giá lại một cách hợp lý (nếu có), và chi phí khấu hao/phân bổ được tính toán, ghi nhận chính xác, nhất quán.
+    *   **Trình bày & Phân loại (Presentation & Classification):** Đảm bảo tài sản được phân loại đúng nhóm (hữu hình, vô hình, thuê tài chính) và trình bày phù hợp trên Báo cáo tài chính.
+
+*   **Về Kiểm soát Nội bộ & Tuân thủ (Internal Control & Compliance):**
+    *   Đánh giá tính hiệu quả của hệ thống kiểm soát nội bộ trong suốt vòng đời của tài sản: từ lập kế hoạch và phê duyệt đầu tư, mua sắm, bàn giao trách nhiệm, theo dõi sử dụng, bảo dưỡng, kiểm kê, đến thanh lý.
+    *   Đảm bảo việc quản lý và hạch toán tài sản tuân thủ các chính sách nội bộ của công ty và các quy định pháp luật, chuẩn mực kế toán có liên quan.
+
+*   **Về Bảo vệ Tài sản (Safeguarding of Assets):**
+    *   Đánh giá các biện pháp nhằm bảo vệ tài sản khỏi các rủi ro mất mát, hư hỏng, lạc hậu hoặc lạm dụng.
 
 ## II. Các thủ tục kiểm toán chi tiết
 

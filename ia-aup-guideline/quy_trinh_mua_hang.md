@@ -2,12 +2,21 @@
 
 ## I. Mục tiêu kiểm toán
 
-*   Đảm bảo hàng hóa, dịch vụ được mua sắm nhằm mục đích kinh doanh hợp lý và được phê duyệt đúng thẩm quyền.
-*   Đảm bảo các khoản nợ phải trả cho hàng hóa, dịch vụ đã nhận được ghi nhận đầy đủ, chính xác và đúng kỳ.
-*   Đảm bảo chi phí được phân loại và hạch toán đúng đắn.
-*   Đảm bảo các khoản thanh toán chỉ được thực hiện cho các hóa đơn hợp lệ và được ủy quyền phù hợp.
-*   Phát hiện và ngăn chặn các sai sót trọng yếu hoặc gian lận trong chu trình mua hàng và thanh toán.
-*   Đảm bảo hệ thống kiểm soát nội bộ đối với chu trình mua hàng và công nợ phải trả là hiệu quả.
+*   **Về Ghi nhận Chi phí & Công nợ Phải trả:**
+    *   **Đầy đủ & Đúng kỳ:** Đảm bảo tất cả các nghĩa vụ nợ phải trả phát sinh từ việc mua hàng hóa, dịch vụ trong kỳ đều được ghi nhận đầy đủ và đúng kỳ kế toán.
+    *   **Hiện hữu & Nghĩa vụ:** Đảm bảo các khoản nợ phải trả được ghi nhận là nghĩa vụ có thật của đơn vị.
+    *   **Chính xác & Phân loại:** Đảm bảo chi phí và công nợ phải trả được tính toán, ghi nhận đúng số tiền và phân loại đúng vào các tài khoản liên quan.
+
+*   **Về Thanh toán:**
+    *   **Hợp lệ & Được phê duyệt:** Đảm bảo các khoản thanh toán chỉ được thực hiện cho các nghĩa vụ nợ hợp lệ, có đầy đủ chứng từ và được phê duyệt đúng thẩm quyền.
+    *   **Chính xác:** Đảm bảo các khoản thanh toán được thực hiện đúng số tiền, đúng nhà cung cấp.
+
+*   **Về Kiểm soát Nội bộ & Tuân thủ:**
+    *   Đánh giá tính hiệu quả của hệ thống kiểm soát nội bộ trong toàn bộ chu trình mua hàng, từ khâu đề xuất, lựa chọn nhà cung cấp, đặt hàng, nhận hàng, ghi nhận công nợ đến khâu thanh toán và xử lý khiếu nại.
+    *   Đảm bảo các hoạt động mua sắm tuân thủ quy chế, chính sách của công ty và các quy định pháp luật liên quan.
+
+*   **Về Phát hiện Gian lận & Sai sót:**
+    *   Phát hiện và ngăn chặn các rủi ro, sai sót trọng yếu hoặc hành vi gian lận có thể xảy ra trong chu trình mua hàng và thanh toán (ví dụ: mua hàng không có thật, thanh toán khống, thông đồng với nhà cung cấp).
 
 ## II. Các thủ tục kiểm toán chi tiết
 

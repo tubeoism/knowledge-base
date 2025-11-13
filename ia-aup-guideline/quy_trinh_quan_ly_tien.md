@@ -2,11 +2,19 @@
 
 ## I. Mục tiêu kiểm toán
 
-*   Đảm bảo tất cả các giao dịch tiền mặt được ghi nhận đầy đủ, chính xác và kịp thời.
-*   Xác minh sự tồn tại và quyền sở hữu của tiền mặt tại quỹ và tại ngân hàng.
-*   Đánh giá sự tuân thủ các chính sách và thủ tục quản lý tiền mặt của doanh nghiệp và quy định pháp luật hiện hành.
-*   Phát hiện và ngăn chặn các sai sót trọng yếu hoặc gian lận liên quan đến tiền mặt.
-*   Đảm bảo hệ thống kiểm soát nội bộ đối với tiền mặt là hiệu quả và hoạt động đúng đắn.
+*   **Về các Cơ sở dẫn liệu BCTC (Financial Statement Assertions):**
+    *   **Hiện hữu & Quyền:** Xác minh sự tồn tại và quyền sở hữu của doanh nghiệp đối với số dư tiền mặt tại quỹ và tiền gửi tại các ngân hàng vào ngày kết thúc kỳ.
+    *   **Đầy đủ:** Đảm bảo tất cả các giao dịch thu, chi tiền phát sinh trong kỳ đều được ghi nhận đầy đủ.
+    *   **Đánh giá & Chính xác:** Đảm bảo các số dư tiền và các giao dịch được ghi nhận đúng giá trị, và các khoản tiền có gốc ngoại tệ được đánh giá lại đúng theo tỷ giá quy định cuối kỳ.
+    *   **Trình bày:** Đảm bảo các khoản mục tiền và tương đương tiền được phân loại và trình bày phù hợp trên Báo cáo tài chính.
+
+*   **Về Kiểm soát Nội bộ & Tuân thủ (Internal Control & Compliance):**
+    *   Đánh giá tính hiệu quả của hệ thống kiểm soát nội bộ đối với toàn bộ quy trình quản lý tiền, bao gồm thu, chi, ghi sổ, kiểm kê, đối chiếu, và đặc biệt là các kiểm soát đối với ngân hàng điện tử.
+    *   Đảm bảo việc quản lý và sử dụng tiền tuân thủ các chính sách nội bộ (ví dụ: định mức tồn quỹ, phân quyền phê duyệt) và các quy định của pháp luật.
+    *   Đánh giá sự phân công nhiệm vụ có đảm bảo tính tách bạch, độc lập để ngăn ngừa sai sót và gian lận hay không.
+
+*   **Về Bảo vệ Tài sản (Safeguarding of Assets):**
+    *   Đánh giá các biện pháp vật chất và phi vật chất nhằm bảo vệ tiền khỏi các rủi ro mất mát, thất thoát hoặc lạm dụng, bao gồm việc kiểm soát két quỹ, quản lý thiết bị xác thực (token) và phân quyền truy cập ngân hàng điện tử.
 
 ## II. Các thủ tục kiểm toán chi tiết
 

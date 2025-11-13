@@ -1,0 +1,150 @@
+# Phần hành: Thuế
+
+## I. Mục tiêu kiểm toán
+
+*   **Về Tuân thủ (Compliance):**
+    *   **Tuân thủ chung:** Đảm bảo Công ty tuân thủ đầy đủ, kịp thời các quy định của pháp luật thuế hiện hành trong việc kê khai và nộp các loại thuế (GTGT, TNDN, TNCN, FCT...).
+    *   **Tuân thủ đặc thù:** Đảm bảo việc lập và quản lý hóa đơn, chứng từ; kê khai giao dịch liên kết; và áp dụng các ưu đãi thuế được thực hiện đúng quy định.
+
+*   **Về Tính chính xác & Đầy đủ (Accuracy & Completeness):**
+    *   Đánh giá tính chính xác và đầy đủ của các số liệu trên tờ khai thuế so với sổ sách kế toán và chứng từ gốc.
+    *   Đảm bảo các chi phí tính thuế TNDN và các khoản khấu trừ thuế GTGT là hợp lệ, hợp pháp và có đầy đủ chứng từ chứng minh.
+
+*   **Về Quản lý Rủi ro & Kiểm soát (Risk Management & Control):**
+    *   Đánh giá sự đầy đủ và hiệu quả của hệ thống kiểm soát nội bộ đối với quy trình thuế, từ khâu thu thập chứng từ, lập tờ khai, phê duyệt, đến nộp thuế và lưu trữ hồ sơ.
+    *   Đánh giá quy trình nhận diện, đánh giá và ứng phó với các rủi ro trọng yếu về thuế của Công ty.
+    *   Xem xét việc khắc phục các vấn đề đã được nêu ra trong các cuộc thanh tra, kiểm tra thuế trước đây.
+
+## II. Các thủ tục kiểm toán chi tiết
+
+### 1. THUẾ-01: Rà soát quy trình tính, kê khai và nộp thuế
+
+- **Thủ tục:** Kiểm tra, đánh giá quy trình tính, kê khai, nộp thuế của từng loại thuế (GTGT, TNDN, TNCN, ...) và việc phân công nhiệm vụ trong quy trình này.
+- **Nội dung kiểm tra:**
+    - Mô tả và vẽ sơ đồ quy trình từ khâu lập tờ khai, phê duyệt, đến khâu nộp tiền thuế.
+    - Phỏng vấn nhân sự kế toán, kế toán trưởng về vai trò, trách nhiệm của từng cá nhân trong quy trình.
+    - Kiểm tra ma trận phân quyền, phân nhiệm có được xây dựng và tuân thủ.
+- **Dẫn liệu cần thu thập:**
+    - Sơ đồ quy trình (nếu có).
+    - Bảng mô tả công việc của các vị trí liên quan.
+    - Ma trận phân công trách nhiệm.
+    - Bằng chứng phỏng vấn.
+
+### 2. THUẾ-02: Rà soát việc xác định thuế suất và chính sách ưu đãi
+
+- **Thủ tục:** Đánh giá cách thức Công ty xác định thuế suất và áp dụng các chính sách ưu đãi thuế.
+- **Nội dung kiểm tra:**
+    - Công ty cập nhật các văn bản pháp luật về thuế như thế nào?
+    - Việc áp dụng thuế suất (đặc biệt là các mặt hàng có nhiều mức thuế suất) có được kiểm tra, phê duyệt không?
+    - Công ty có tham vấn các đơn vị tư vấn chuyên môn hoặc cơ quan Thuế khi có vướng mắc không? Có lưu lại bằng chứng tham vấn không?
+    - Kiểm tra hồ sơ hưởng ưu đãi thuế (nếu có): có đủ điều kiện không, có được cơ quan có thẩm quyền phê duyệt không?
+- **Dẫn liệu cần thu thập:**
+    - Công văn, email trao đổi với đơn vị tư vấn, cơ quan Thuế.
+    - Hồ sơ, quyết định miễn giảm, ưu đãi thuế.
+    - Tờ khai thuế các kỳ để kiểm tra mức thuế suất áp dụng.
+
+### 3. THUẾ-03: Kiểm tra tính tuân thủ về thời hạn và việc điều chỉnh kê khai
+
+- **Thủ tục:** Kiểm tra việc nộp tờ khai có đúng hạn và phân tích các trường hợp điều chỉnh, bổ sung tờ khai thuế.
+- **Nội dung kiểm tra:**
+    - Đối chiếu ngày nộp trên thông báo của cơ quan thuế với hạn nộp theo quy định.
+    - Thống kê các lần kê khai bổ sung, điều chỉnh trong kỳ.
+    - Phân tích nguyên nhân các sai sót dẫn đến phải điều chỉnh (ví dụ: sai sót có hệ thống, sai sót cá nhân).
+    - Quy trình điều chỉnh tờ khai có được phê duyệt, giải trình đầy đủ và có người chịu trách nhiệm rõ ràng không?
+- **Dẫn liệu cần thu thập:**
+    - Thông báo chấp nhận tờ khai của cơ quan thuế.
+    - Danh sách các tờ khai đã nộp qua cổng thông tin điện tử.
+    - Các tờ khai bổ sung, điều chỉnh và bộ hồ sơ giải trình kèm theo.
+
+### 4. THUẾ-04: Đánh giá quy trình quản lý rủi ro về thuế
+
+- **Thủ tục:** Xem xét việc Công ty có nhận diện, đánh giá và xây dựng biện pháp ứng phó với các rủi ro thuế hay không.
+- **Nội dung kiểm tra:**
+    - Công ty có lập danh mục các rủi ro thuế tiềm tàng không (ví dụ: rủi ro về giá chuyển nhượng, rủi ro bị truy thu, rủi ro pháp lý)?
+    - Các rủi ro này có được đánh giá mức độ ảnh hưởng và khả năng xảy ra không?
+    - Chính sách, biện pháp ứng phó với từng rủi ro là gì?
+    - Phỏng vấn Ban lãnh đạo về quan điểm, "khẩu vị rủi ro" (risk appetite) đối với các vấn đề về thuế.
+- **Dẫn liệu cần thu thập:**
+    - Danh mục quản lý rủi ro (nếu có).
+    - Biên bản họp của Ban lãnh đạo, Hội đồng quản trị liên quan đến rủi ro thuế.
+    - Bằng chứng phỏng vấn Ban lãnh đạo.
+
+### 5. THUẾ-05: Rà soát các vấn đề từ các cuộc thanh kiểm tra thuế
+
+- **Thủ tục:** Kiểm tra lịch sử các cuộc thanh tra, kiểm tra thuế và tình hình xử lý các vấn đề phát sinh.
+- **Nội dung kiểm tra:**
+    - Các kết luận, biên bản từ các cuộc thanh kiểm tra thuế trước đây là gì?
+    - Công ty đã khắc phục các vấn đề này như thế nào? Có bằng chứng khắc phục không?
+    - Hiện tại Công ty có đang trong giai đoạn bị thanh kiểm tra hay không?
+    - Có vấn đề tranh chấp, vướng mắc nào mới phát sinh với cơ quan Thuế không?
+    - Trao đổi với bộ phận phụ trách để hiểu quan điểm của cơ quan Thuế về mức độ tuân thủ của Công ty.
+- **Dẫn liệu cần thu thập:**
+    - Biên bản, kết luận thanh tra, kiểm tra thuế.
+    - Bằng chứng về việc nộp phạt, truy thu (nếu có).
+    - Các công văn, email trao đổi với cơ quan thuế.
+
+### 6. THUẾ-06: Kiểm tra kê khai và hồ sơ giá giao dịch liên kết
+
+- **Thủ tục:** Đảm bảo việc kê khai các giao dịch với bên liên kết và lập Hồ sơ xác định giá giao dịch liên kết tuân thủ quy định.
+- **Nội dung kiểm tra:**
+    - Công ty có xác định đúng và đủ các bên liên kết theo quy định không?
+    - Phụ lục giao dịch liên kết có được lập và nộp cùng tờ khai quyết toán thuế TNDN đúng hạn không?
+    - Hồ sơ xác định giá giao dịch liên kết (Hồ sơ quốc gia, Hồ sơ toàn cầu, Báo cáo lợi nhuận liên quốc gia) có được lập đầy đủ, đúng thời hạn quy định không?
+    - Phương pháp xác định giá giao dịch liên kết có phù hợp và được justifications đầy đủ không?
+- **Dẫn liệu cần thu thập:**
+    - Danh sách các bên liên kết.
+    - Tờ khai quyết toán thuế TNDN và các phụ lục đính kèm.
+    - Bộ Hồ sơ xác định giá giao dịch liên kết.
+    - Các hợp đồng, chứng từ liên quan đến giao dịch liên kết.
+
+### 7. THUẾ-07: Kiểm tra việc lập và quản lý hóa đơn
+
+- **Thủ tục:** Đánh giá tính tuân thủ quy định về thời điểm và thông tin khi lập hóa đơn.
+- **Nội dung kiểm tra:**
+    - Thời điểm xuất hóa đơn có tuân thủ quy định không (ví dụ: thời điểm chuyển giao quyền sở hữu, hoàn thành dịch vụ)?
+    - Các thông tin bắt buộc trên hóa đơn có đầy đủ và chính xác không?
+    - Tần suất phát sinh việc điều chỉnh, sửa đổi, thay thế, hủy bỏ hóa đơn có cao không?
+    - Phân tích nguyên nhân của việc sửa đổi, điều chỉnh (do lỗi chủ quan, khách quan)? Quy trình xử lý hóa đơn sai sót có được tuân thủ?
+- **Dẫn liệu cần thu thập:**
+    - Chọn mẫu hóa đơn đầu ra để kiểm tra.
+    - Bảng kê/báo cáo tình hình sử dụng hóa đơn.
+    - Các biên bản điều chỉnh, thay thế hóa đơn và hồ sơ giải trình.
+
+### 8. THUẾ-08: Rà soát việc kiểm soát chứng từ tuân thủ thuế
+
+- **Thủ tục:** Kiểm tra quy trình kiểm soát chứng từ đầu vào và đầu ra để đảm bảo tính hợp lệ, hợp pháp, hợp lý cho mục đích tính thuế.
+- **Nội dung kiểm tra:**
+    - Công ty có bộ quy tắc/checklist để kiểm tra tính hợp lệ của hóa đơn, chứng từ đầu vào không (ví dụ: kiểm tra thông tin nhà cung cấp, chữ ký, tính đầy đủ của hồ sơ thanh toán)?
+    - Việc lưu trữ, sắp xếp chứng từ (hợp đồng, hóa đơn, biên bản nghiệm thu, chứng từ thanh toán) có khoa học, dễ truy xuất không?
+    - Ai là người chịu trách nhiệm cuối cùng cho việc kiểm tra tính hợp lệ của chứng từ trước khi ghi sổ?
+- **Dẫn liệu cần thu thập:**
+    - Quy chế chi tiêu nội bộ, quy chế tài chính.
+    - Checklist kiểm tra chứng từ (nếu có).
+    - Chọn mẫu các bộ chứng từ chi phí để kiểm tra tính đầy đủ, hợp lệ.
+
+### 9. THUẾ-09: Kiểm tra chi phí phúc lợi cho người lao động
+
+- **Thủ tục:** Đánh giá việc hạch toán và tuân thủ quy định thuế đối với các khoản chi phúc lợi cho người lao động, đặc biệt là quản lý cấp cao.
+- **Nội dung kiểm tra:**
+    - Các khoản chi phúc lợi (ví dụ: nghỉ mát, đào tạo, bảo hiểm tự nguyện, phụ cấp...) có được quy định rõ trong hợp đồng lao động, thỏa ước lao động tập thể, hoặc quy chế tài chính không?
+    - Các khoản chi có bị vượt mức khống chế theo quy định của thuế TNDN không (ví dụ: chi có tính chất phúc lợi trực tiếp không quá 01 tháng lương bình quân)?
+    - Các khoản phúc lợi bằng tiền, bằng hiện vật cho quản lý cấp cao có được ghi nhận và tính thuế TNCN đầy đủ không?
+- **Dẫn liệu cần thu thập:**
+    - Hợp đồng lao động, thỏa ước lao động tập thể.
+    - Quy chế lương thưởng, quy chế tài chính.
+    - Bảng lương, chứng từ chi các khoản phúc lợi.
+    - Tờ khai quyết toán thuế TNCN.
+
+### 10. THUẾ-10: Rà soát việc tuân thủ thuế nhà thầu nước ngoài (FCT)
+
+- **Thủ tục:** Kiểm tra việc theo dõi, kê khai và quyết toán thuế nhà thầu đối với các hợp đồng với nhà thầu nước ngoài.
+- **Nội dung kiểm tra:**
+    - Công ty có lập danh sách theo dõi tất cả các hợp đồng ký với nhà thầu nước ngoài không?
+    - Việc xác định đối tượng chịu thuế, giá tính thuế, và tỷ lệ % để tính thuế GTGT, TNDN có đúng quy định không?
+    - Việc kê khai và nộp thuế FCT có được thực hiện đầy đủ, đúng hạn cho từng lần thanh toán hoặc theo tháng không?
+    - Công ty cập nhật các thay đổi của quy định về thuế nhà thầu như thế nào? Có đánh giá tác động đến các hợp đồng hiện tại và tương lai không?
+- **Dẫn liệu cần thu thập:**
+    - Danh sách hợp đồng nhà thầu nước ngoài.
+    - Các hợp đồng đã ký.
+    - Tờ khai thuế nhà thầu (Mẫu 01/NTNN) và chứng từ nộp tiền.
+    - Các công văn, email trao đổi về việc áp dụng thuế FCT.

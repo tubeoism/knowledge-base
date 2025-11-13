@@ -2,12 +2,21 @@
 
 ## I. Mục tiêu kiểm toán
 
-*   Đảm bảo doanh thu được ghi nhận là có thật, chính xác, đúng kỳ và thuộc về đơn vị.
-*   Đảm bảo tất cả các giao dịch bán hàng đã phát sinh đều được ghi nhận đầy đủ.
-*   Xác minh các khoản phải thu được trình bày đúng đắn, có khả năng thu hồi và được đánh giá đầy đủ.
-*   Đánh giá sự tuân thủ các chính sách bán hàng, quy định về tín dụng của công ty và các chuẩn mực kế toán liên quan.
-*   Phát hiện và ngăn chặn các sai sót trọng yếu hoặc gian lận trong chu trình bán hàng và thu tiền.
-*   Đảm bảo hệ thống kiểm soát nội bộ đối với chu trình bán hàng và công nợ phải thu là hiệu quả.
+*   **Về Ghi nhận Doanh thu:**
+    *   **Hiện hữu & Quyền:** Đảm bảo doanh thu được ghi nhận tương ứng với các giao dịch bán hàng có thật và thuộc về đơn vị.
+    *   **Đầy đủ:** Đảm bảo tất cả các giao dịch bán hàng đã phát sinh trong kỳ đều được ghi nhận đầy đủ.
+    *   **Chính xác & Đúng kỳ:** Đảm bảo doanh thu được ghi nhận đúng số tiền và đúng kỳ kế toán.
+
+*   **Về Công nợ Phải thu:**
+    *   **Đánh giá & Khả năng thu hồi:** Xác minh các khoản phải thu được phản ánh theo giá trị có thể thu hồi, và việc trích lập dự phòng nợ phải thu khó đòi là đầy đủ và hợp lý.
+    *   **Trình bày:** Đảm bảo các khoản phải thu được phân loại và trình bày đúng đắn trên Báo cáo tài chính.
+
+*   **Về Kiểm soát Nội bộ & Tuân thủ:**
+    *   Đánh giá tính hiệu quả của hệ thống kiểm soát nội bộ trong toàn bộ chu trình bán hàng, từ khâu báo giá, phê duyệt tín dụng, giao hàng, xuất hóa đơn, theo dõi công nợ đến xử lý khiếu nại.
+    *   Đánh giá sự tuân thủ các chính sách bán hàng, chính sách tín dụng của công ty và các quy định pháp luật, chuẩn mực kế toán có liên quan.
+
+*   **Về Phát hiện Gian lận & Sai sót:**
+    *   Phát hiện và ngăn chặn các rủi ro, sai sót trọng yếu hoặc hành vi gian lận có thể xảy ra trong chu trình bán hàng và thu tiền.
 
 ## II. Các thủ tục kiểm toán chi tiết
 
