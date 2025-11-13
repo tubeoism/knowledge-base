@@ -1,0 +1,106 @@
+# Phần hành: Quy trình Mua hàng và Công nợ phải trả
+
+## I. Mục tiêu kiểm toán
+
+*   Đảm bảo hàng hóa, dịch vụ được mua sắm nhằm mục đích kinh doanh hợp lý và được phê duyệt đúng thẩm quyền.
+*   Đảm bảo các khoản nợ phải trả cho hàng hóa, dịch vụ đã nhận được ghi nhận đầy đủ, chính xác và đúng kỳ.
+*   Đảm bảo chi phí được phân loại và hạch toán đúng đắn.
+*   Đảm bảo các khoản thanh toán chỉ được thực hiện cho các hóa đơn hợp lệ và được ủy quyền phù hợp.
+*   Phát hiện và ngăn chặn các sai sót trọng yếu hoặc gian lận trong chu trình mua hàng và thanh toán.
+*   Đảm bảo hệ thống kiểm soát nội bộ đối với chu trình mua hàng và công nợ phải trả là hiệu quả.
+
+## II. Các thủ tục kiểm toán chi tiết
+
+### 1. AUP-MH-01: Kiểm tra quy trình xác định nhu cầu và đề xuất mua sắm
+
+- **Thủ tục:** Rà soát quy trình từ khi phát sinh nhu cầu đến khi lập đề xuất mua sắm chính thức.
+- **Nội dung kiểm tra:**
+    - Kiểm tra tính hợp lý của nhu cầu mua sắm (phù hợp với kế hoạch sản xuất kinh doanh, định mức...).
+    - Chọn mẫu các "Đề nghị mua sắm" (Purchase Requisition) để kiểm tra xem có được điền đầy đủ thông tin, nêu rõ lý do và được trưởng bộ phận liên quan phê duyệt hay không.
+- **Dẫn liệu cần thu thập:**
+    - Phiếu đề nghị mua sắm/mua hàng.
+    - Kế hoạch sản xuất, kinh doanh, hoặc ngân sách của các bộ phận.
+
+### 2. AUP-MH-02: Khảo sát nhà cung cấp và thu thập báo giá
+
+- **Thủ tục:** Đánh giá quy trình lựa chọn nhà cung cấp và thu thập báo giá cạnh tranh.
+- **Nội dung kiểm tra:**
+    - Kiểm tra quy trình đánh giá và phê duyệt nhà cung cấp mới (năng lực, uy tín, lịch sử...).
+    - Xác minh việc công ty có tuân thủ chính sách mời thầu/chào giá cạnh tranh (ví dụ: yêu cầu 3 báo giá cho các đơn hàng trên một ngưỡng giá trị nhất định).
+    - Rà soát các tài liệu so sánh, lựa chọn báo giá và lý do chọn nhà cung cấp.
+- **Dẫn liệu cần thu thập:**
+    - Danh sách nhà cung cấp được phê duyệt.
+    - Hồ sơ đánh giá nhà cung cấp.
+    - Các báo giá từ nhà cung cấp.
+    - Bảng tổng hợp so sánh báo giá và biên bản chọn nhà cung cấp.
+
+### 3. AUP-MH-03: Kiểm tra quy trình phê duyệt yêu cầu mua sắm (Đơn đặt hàng)
+
+- **Thủ tục:** Kiểm tra việc tạo và phê duyệt "Đơn đặt hàng" (Purchase Order - PO).
+- **Nội dung kiểm tra:**
+    - Đối chiếu thông tin trên PO (nhà cung cấp, hàng hóa, số lượng, giá) với đề nghị mua sắm và báo giá đã được duyệt.
+    - Xác minh PO được phê duyệt bởi người có thẩm quyền theo đúng hạn mức chi tiêu quy định.
+    - Kiểm tra xem các điều khoản quan trọng (thời gian giao hàng, điều khoản thanh toán, phạt vi phạm...) có được nêu rõ trên PO không.
+- **Dẫn liệu cần thu thập:**
+    - Đơn đặt hàng (PO) đã được ký duyệt.
+    - Quy định về phân quyền phê duyệt chi tiêu.
+
+### 4. AUP-MH-04: Thủ tục nhận hàng hóa/nghiệm thu dịch vụ
+
+- **Thủ tục:** Rà soát quy trình tiếp nhận hàng hóa và nghiệm thu dịch vụ hoàn thành.
+- **Nội dung kiểm tra:**
+    - Đối chiếu "Phiếu nhập kho" hoặc "Biên bản giao nhận" với Đơn đặt hàng về số lượng, quy cách.
+    - Kiểm tra xem có bộ phận độc lập (ví dụ: thủ kho, bộ phận kiểm soát chất lượng) thực hiện việc kiểm đếm, kiểm tra chất lượng hàng hóa khi nhận hay không.
+    - Đối với dịch vụ, kiểm tra "Biên bản nghiệm thu" có chữ ký xác nhận của bộ phận sử dụng dịch vụ không.
+- **Dẫn liệu cần thu thập:**
+    - Phiếu nhập kho, biên bản giao nhận hàng hóa.
+    - Báo cáo kiểm tra chất lượng (nếu có).
+    - Biên bản nghiệm thu dịch vụ hoàn thành.
+
+### 5. AUP-MH-05: Ghi nhận chi phí và công nợ phải trả
+
+- **Thủ tục:** Kiểm tra việc ghi nhận hóa đơn của nhà cung cấp vào sổ sách kế toán.
+- **Nội dung kiểm tra:**
+    - Thực hiện đối chiếu "3 chiều": Hóa đơn nhà cung cấp vs. Đơn đặt hàng vs. Chứng từ nhận hàng/nghiệm thu.
+    - Kiểm tra việc phân loại và hạch toán chi phí vào đúng tài khoản (chi phí nguyên vật liệu, chi phí quản lý, tài sản cố định...).
+    - Thực hiện thủ tục "cut-off" mua hàng để đảm bảo công nợ phải trả được ghi nhận đúng kỳ.
+- **Dẫn liệu cần thu thập:**
+    - Hóa đơn của nhà cung cấp.
+    - Sổ cái và sổ chi tiết các tài khoản chi phí và công nợ phải trả (331).
+    - Bộ chứng từ mua hàng của các giao dịch được chọn mẫu.
+
+### 6. AUP-MH-06: Rà soát lịch thanh toán và dự kiến dòng tiền
+
+- **Thủ tục:** Phỏng vấn và rà soát cách thức bộ phận kế toán quản lý các khoản phải trả đến hạn.
+- **Nội dung kiểm tra:**
+    - Trao đổi với kế toán thanh toán về quy trình lập kế hoạch thanh toán hàng tuần/tháng.
+    - Xem xét các báo cáo dự kiến dòng tiền chi ra để đảm bảo các khoản công nợ lớn được đưa vào kế hoạch.
+    - Kiểm tra xem công ty có tận dụng các cơ hội hưởng chiết khấu thanh toán từ nhà cung cấp không.
+- **Dẫn liệu cần thu thập:**
+    - Báo cáo công nợ phải trả theo tuổi nợ.
+    - Kế hoạch/lịch thanh toán cho nhà cung cấp.
+    - Báo cáo dự kiến dòng tiền.
+
+### 7. AUP-MH-07: Quy trình phê duyệt và kiểm soát hồ sơ thanh toán
+
+- **Thủ tục:** Chọn mẫu các khoản thanh toán đã thực hiện và kiểm tra bộ hồ sơ thanh toán.
+- **Nội dung kiểm tra:**
+    - Xác minh sự tồn tại của một bộ hồ sơ thanh toán đầy đủ (Đề nghị thanh toán, hóa đơn, PO, chứng từ nhận hàng/nghiệm thu...).
+    - Kiểm tra chữ ký phê duyệt thanh toán của cấp có thẩm quyền.
+    - Đảm bảo hóa đơn và các chứng từ gốc được đóng dấu "Đã thanh toán" để tránh việc thanh toán hai lần.
+    - Đối chiếu thông tin trên lệnh chuyển tiền/ủy nhiệm chi với thông tin nhà cung cấp trên hóa đơn/hợp đồng.
+- **Dẫn liệu cần thu thập:**
+    - Bộ hồ sơ thanh toán đầy đủ.
+    - Lệnh chuyển tiền, ủy nhiệm chi đã có xác nhận của ngân hàng.
+
+### 8. AUP-MH-08: Quản lý khiếu nại và các khoản trả trước/ký quỹ
+
+- **Thủ tục:** Phỏng vấn về quy trình xử lý khiếu nại chất lượng và quản lý các khoản trả trước.
+- **Nội dung kiểm tra:**
+    - Rà soát các biên bản làm việc, email hoặc các tài liệu liên quan đến việc khiếu nại chất lượng hàng hóa, dịch vụ.
+    - Kiểm tra các bút toán ghi nhận hàng trả lại, giảm giá hàng mua hoặc các khoản bồi thường từ nhà cung cấp.
+    - Chọn mẫu các khoản trả trước, đặt cọc, ký quỹ cho nhà cung cấp; xác minh mục đích, sự phê duyệt và tình trạng đối trừ hoặc thu hồi.
+- **Dẫn liệu cần thu thập:**
+    - Các hồ sơ liên quan đến khiếu nại chất lượng.
+    - Hóa đơn điều chỉnh, biên bản trả lại hàng.
+    - Sổ chi tiết tài khoản trả trước cho người bán (331).

@@ -1,0 +1,108 @@
+# Phần hành: Quy trình Quản lý Tài sản
+
+## I. Mục tiêu kiểm toán
+
+*   Đảm bảo tài sản cố định (TSCĐ) và tài sản khác là có thật, thuộc quyền sở hữu/quyền sử dụng lâu dài của doanh nghiệp và đang được sử dụng cho mục đích kinh doanh.
+*   Đảm bảo việc mua sắm, đầu tư, nâng cấp và thanh lý tài sản được phê duyệt đúng thẩm quyền và ghi nhận chính xác.
+*   Xác minh tài sản được ghi nhận đúng nguyên giá, phân loại đúng nhóm và áp dụng phương pháp khấu hao/phân bổ nhất quán, phù hợp.
+*   Đảm bảo sổ sách tài sản chi tiết khớp với sổ cái và kết quả kiểm kê thực tế.
+*   Phát hiện và ngăn chặn các sai sót trọng yếu hoặc rủi ro mất mát, hư hỏng, lạm dụng tài sản.
+*   Đảm bảo hệ thống kiểm soát nội bộ đối với toàn bộ vòng đời tài sản là hiệu quả.
+
+## II. Các thủ tục kiểm toán chi tiết
+
+### 1. AUP-TS-01: Phân bổ, tiếp nhận và bàn giao trách nhiệm quản lý
+
+- **Thủ tục:** Kiểm tra quy trình giao trách nhiệm quản lý, sử dụng tài sản cho các bộ phận, cá nhân.
+- **Nội dung kiểm tra:**
+    - Rà soát quy định của công ty về việc giao, nhận và quản lý tài sản.
+    - Chọn mẫu các tài sản được cấp phát trong kỳ, kiểm tra sự tồn tại của "Biên bản bàn giao tài sản" có đầy đủ chữ ký của bên giao, bên nhận và bộ phận quản lý tài sản.
+    - Đối chiếu thông tin người/bộ phận chịu trách nhiệm trên biên bản bàn giao với sổ theo dõi tài sản chi tiết.
+- **Dẫn liệu cần thu thập:**
+    - Quy chế quản lý tài sản của công ty.
+    - Biên bản bàn giao và thu hồi tài sản.
+    - Sổ chi tiết theo dõi tài sản tại nơi sử dụng.
+
+### 2. AUP-TS-02: Kiểm kê và đánh giá định kỳ tình trạng tài sản
+
+- **Thủ tục:** Tham gia chứng kiến hoặc rà soát kết quả của đợt kiểm kê tài sản định kỳ hoặc đột xuất.
+- **Nội dung kiểm tra:**
+    - So sánh kết quả kiểm kê thực tế (số lượng, tình trạng) với dữ liệu trên sổ sách kế toán và sổ theo dõi chi tiết.
+    - Phỏng vấn và yêu cầu giải trình đối với bất kỳ chênh lệch nào (thừa, thiếu, hỏng hóc).
+    - Rà soát các biên bản đánh giá lại tài sản hoặc báo cáo về các tài sản không còn sử dụng, chờ thanh lý để xem xét sự cần thiết của việc ghi giảm hoặc trích lập dự phòng.
+- **Dẫn liệu cần thu thập:**
+    - Kế hoạch và quyết định thành lập ban kiểm kê.
+    - Biên bản kiểm kê tài sản có đầy đủ chữ ký.
+    - Báo cáo tổng hợp và giải trình kết quả kiểm kê.
+    - Biên bản đánh giá tình trạng kỹ thuật của tài sản.
+
+### 3. AUP-TS-03: Kế hoạch theo dõi, bảo dưỡng và sửa chữa
+
+- **Thủ tục:** Đánh giá quy trình lập kế hoạch, thực hiện và ghi nhận chi phí bảo trì, sửa chữa tài sản.
+- **Nội dung kiểm tra:**
+    - Đối với các tài sản quan trọng (máy móc thiết bị, phương tiện vận tải), kiểm tra xem có kế hoạch bảo dưỡng định kỳ được phê duyệt không.
+    - Chọn mẫu các chi phí sửa chữa lớn, xem xét bản chất của chi phí để đánh giá việc vốn hóa (nếu là nâng cấp) hay hạch toán vào chi phí trong kỳ (nếu là sửa chữa thường xuyên) có phù hợp không.
+    - Rà soát nhật ký bảo dưỡng, sửa chữa để phát hiện các vấn đề bất thường về tần suất hoặc chi phí.
+- **Dẫn liệu cần thu thập:**
+    - Chính sách bảo trì, bảo dưỡng tài sản.
+    - Kế hoạch và lịch trình bảo dưỡng định kỳ.
+    - Hồ sơ, hóa đơn, hợp đồng sửa chữa, bảo dưỡng.
+    - Phân tích của kế toán về việc vốn hóa hay ghi nhận chi phí.
+
+### 4. AUP-TS-04: Xây dựng và phê duyệt kế hoạch nâng cấp, đầu tư mới
+
+- **Thủ tục:** Kiểm tra quy trình phê duyệt các khoản chi tiêu vốn (CAPEX) cho việc đầu tư mới hoặc nâng cấp tài sản.
+- **Nội dung kiểm tra:**
+    - Chọn mẫu các tài sản mua sắm/xây dựng trong kỳ, truy ngược lại các tờ trình, đề xuất đầu tư.
+    - Xác minh các dự án đầu tư có được phê duyệt bởi cấp có thẩm quyền (HĐQT, Ban Giám đốc) theo đúng quy chế tài chính và hạn mức đầu tư không.
+    - Kiểm tra tính hợp lý của dự toán và việc tuân thủ ngân sách đầu tư đã được duyệt.
+- **Dẫn liệu cần thu thập:**
+    - Ngân sách chi tiêu vốn (CAPEX budget) hàng năm.
+    - Tờ trình, dự án đầu tư, báo cáo nghiên cứu khả thi.
+    - Biên bản họp hoặc quyết định phê duyệt đầu tư của cấp có thẩm quyền.
+
+### 5. AUP-TS-05: Cách thức hạch toán tài sản (Nguyên giá, Phân loại, Khấu hao)
+
+- **Thủ tục:** Chọn mẫu các tài sản để kiểm tra việc hạch toán ban đầu và tính khấu hao/phân bổ.
+- **Nội dung kiểm tra:**
+    - **Nguyên giá:** Đối chiếu nguyên giá tài sản trên sổ sách với các chứng từ gốc (hợp đồng, hóa đơn, chi phí vận chuyển, lắp đặt, lệ phí trước bạ...).
+    - **Phân loại:** Đảm bảo tài sản được phân loại đúng nhóm (nhà cửa, máy móc, phương tiện, tài sản vô hình...) và được gán thời gian sử dụng hữu ích phù hợp với quy định của công ty và pháp luật.
+    - **Khấu hao/Phân bổ:** Tính toán lại mức khấu hao/phân bổ của các tài sản được chọn mẫu để đảm bảo tính chính xác và nhất quán. Kiểm tra việc ghi nhận bút toán thanh lý, nhượng bán tài sản (tính toán lãi/lỗ).
+- **Dẫn liệu cần thu thập:**
+    - Bộ chứng từ đầy đủ của việc mua sắm/hình thành tài sản.
+    - Bảng đăng ký phương pháp trích khấu hao.
+    - Bảng tính và phân bổ khấu hao hàng tháng/quý/năm.
+    - Hồ sơ thanh lý, nhượng bán tài sản.
+
+### 6. AUP-TS-06: Kiểm tra tài sản đặc thù (Vô hình, Thuê tài chính)
+
+- **Thủ tục:** Rà soát hồ sơ pháp lý và hạch toán đối với các tài sản vô hình và tài sản thuê tài chính.
+- **Nội dung kiểm tra:**
+    - **Tài sản vô hình:**
+        - *Quyền sử dụng đất:* Kiểm tra giấy chứng nhận quyền sử dụng đất, hợp đồng thuê đất để xác minh thời hạn và chi phí.
+        - *Bản quyền, phần mềm:* Kiểm tra hợp đồng, giấy phép (license) để xác minh quyền sở hữu/sử dụng và giá trị.
+        - *Tài sản sở hữu trí tuệ:* Kiểm tra các văn bằng bảo hộ, chứng từ chi phí phát triển.
+        - Kiểm tra việc phân bổ các tài sản này có phù hợp với thời gian sử dụng hữu ích dự kiến không.
+    - **Tài sản thuê tài chính:**
+        - Rà soát các hợp đồng thuê tài sản dài hạn để xác định đúng bản chất là thuê tài chính hay thuê hoạt động.
+        - Đối với tài sản thuê tài chính, kiểm tra việc ghi nhận nợ thuê và nguyên giá tài sản, cũng như việc tính lãi và khấu hao có phù hợp không.
+- **Dẫn liệu cần thu thập:**
+    - Giấy chứng nhận QSDĐ, hợp đồng thuê đất.
+    - Hợp đồng mua bán/chuyển giao, giấy phép bản quyền phần mềm, văn bằng bảo hộ.
+    - Hợp đồng thuê tài chính.
+    - Bảng tính phân bổ và khấu hao liên quan.
+
+### 7. AUP-TS-07: Kiểm tra quy trình đăng ký, đăng kiểm và quyền sở hữu pháp lý
+
+- **Thủ tục:** Rà soát quy trình đăng ký, đăng kiểm và các giấy tờ pháp lý liên quan đến quyền sở hữu đối với các tài sản phải đăng ký (ví dụ: phương tiện giao thông, máy móc đặc thù).
+- **Nội dung kiểm tra:**
+    - Chọn mẫu các tài sản phải đăng ký (ví dụ: ô tô, xe máy, máy móc chuyên dụng) và kiểm tra các giấy tờ pháp lý liên quan (Giấy chứng nhận đăng ký xe, Giấy chứng nhận đăng kiểm, Giấy chứng nhận quyền sở hữu/sử dụng).
+    - Xác minh thông tin trên giấy tờ (chủ sở hữu, số khung, số máy, biển số) khớp với thông tin trên sổ sách kế toán và thực tế tài sản.
+    - Kiểm tra tính hợp lệ và còn hiệu lực của các giấy tờ đăng ký, đăng kiểm.
+    - Đối với tài sản thuê tài chính, kiểm tra các điều khoản về quyền sở hữu và trách nhiệm đăng ký, đăng kiểm.
+- **Dẫn liệu cần thu thập:**
+    - Giấy chứng nhận đăng ký tài sản (đăng ký xe, đăng ký máy móc...).
+    - Giấy chứng nhận đăng kiểm còn hiệu lực.
+    - Hợp đồng mua bán tài sản.
+    - Sổ chi tiết tài sản cố định.
+    - Hợp đồng thuê tài chính (nếu có).
