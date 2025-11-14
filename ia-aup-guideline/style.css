@@ -1,10 +1,18 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #f5f5f5;
 }
 
 h1 {
     text-align: center;
+    color: #333;
+}
+
+h2 {
+    margin-top: 0;
+    color: #555;
+    font-size: 18px;
 }
 
 /* Style the tab */
@@ -45,23 +53,161 @@ h1 {
     border-top: none;
     border-radius: 0 0 5px 5px;
     animation: fadeEffect 1s; /* Fading effect */
+    background-color: white;
+}
+
+/* Filter Container Styles */
+#filter-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.filter-group label {
+    min-width: 100px;
+    font-weight: bold;
+    color: #333;
+}
+
+.filter-group select,
+.filter-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.filter-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-filter,
+.btn-reset {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-filter {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-filter:hover {
+    background-color: #45a049;
+}
+
+.btn-reset {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #da190b;
+}
+
+/* Table Info */
+.table-info {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e8f5e9;
+    border-left: 4px solid #4CAF50;
+    border-radius: 3px;
+    color: #2e7d32;
+}
+
+.table-info p {
+    margin: 0;
 }
 
 /* Table styles */
-table {
+#procedures-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+#procedures-table thead {
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#procedures-table th {
+    border: 1px solid #ccc;
+    padding: 12px;
     text-align: left;
+    font-size: 14px;
 }
 
-th {
-    background-color: #f2f2f2;
+#procedures-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+#procedures-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#procedures-table tbody tr:hover {
+    background-color: #e3f2fd;
+    transition: 0.2s;
+}
+
+/* Styling for Nội_dung_thủ_tục column */
+#procedures-table td strong {
+    color: #1976d2;
+    display: block;
+    margin-top: 5px;
+}
+
+#procedures-table td strong:first-child {
+    margin-top: 0;
+}
+
+/* No results message */
+.no-results {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-size: 16px;
+}
+
+.no-results p {
+    margin: 0;
 }
 
 /* Go from zero to full opacity */
@@ -70,19 +216,46 @@ th {
     to {opacity: 1;}
 }
 
-/* Filter styles */
-#filter-container {
-    margin-bottom: 20px;
-    display: flex;
-    gap: 10px;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
 
-#filter-container select, #filter-container input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+    .filter-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-#keyword-filter {
-    flex-grow: 1;
+    .filter-group label {
+        width: 100%;
+    }
+
+    .filter-group select,
+    .filter-group input {
+        width: 100%;
+    }
+
+    .filter-actions {
+        flex-direction: column;
+    }
+
+    .btn-filter,
+    .btn-reset {
+        width: 100%;
+    }
+
+    #procedures-table {
+        font-size: 12px;
+    }
+
+    #procedures-table th,
+    #procedures-table td {
+        padding: 8px;
+    }
+
+    .tab button {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
 }

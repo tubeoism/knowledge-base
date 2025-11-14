@@ -1,5 +1,6 @@
 const converter = window.showdown ? new showdown.Converter() : null;
 let proceduresData = []; // Store all procedure data globally
+let filterTimeout; // For debouncing
 
 function openTab(evt, tabName) {
     try {
@@ -112,6 +113,7 @@ function renderTable(procedures) {
         const firstProcedure = proceduresData[0]; // Use global data for headers to keep it consistent
         const headerTags = Array.from(firstProcedure.children).map(child => child.tagName);
 
+        tableHtml += `<div class="table-info"><p>Tìm thấy <strong>${procedures.length}</strong> thủ tục</p></div>`;
         tableHtml += "<table id='procedures-table'><thead><tr>";
         headerTags.forEach(tag => {
             let displayHeader = tag.replace(/_/g, ' ');
@@ -136,7 +138,7 @@ function renderTable(procedures) {
         });
         tableHtml += "</tbody></table>";
     } else {
-        tableHtml = "<p>Không có thủ tục nào khớp với tiêu chí lọc.</p>";
+        tableHtml = "<div class='no-results'><p>Không có thủ tục nào khớp với tiêu chí lọc.</p></div>";
     }
 
     tableContainer.innerHTML = tableHtml;
@@ -163,6 +165,23 @@ function filterProcedures() {
 
     renderTable(filteredProcedures);
 }
+
+function resetFilters() {
+    document.getElementById('phanHanh-filter').value = '';
+    document.getElementById('keyword-filter').value = '';
+    renderTable(proceduresData);
+}
+
+// Add event listener for keyword filter with debouncing
+document.addEventListener('DOMContentLoaded', function() {
+    const keywordInput = document.getElementById('keyword-filter');
+    if (keywordInput) {
+        keywordInput.addEventListener('keyup', function() {
+            clearTimeout(filterTimeout);
+            filterTimeout = setTimeout(filterProcedures, 300); // 300ms debounce
+        });
+    }
+});
 
 // Open the first tab by default
 if (document.getElementsByClassName("tablinks").length > 0) {

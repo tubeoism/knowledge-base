@@ -22,10 +22,22 @@
 
     <div id="aup_procedures" class="tabcontent">
         <div id="filter-container">
-            <select id="phanHanh-filter" onchange="filterProcedures()">
-                <option value="">-- Lọc theo Phần hành --</option>
-            </select>
-            <input type="text" id="keyword-filter" onkeyup="filterProcedures()" placeholder="Lọc theo từ khóa...">
+            <h2>Lọc Procedures</h2>
+            <div class="filter-group">
+                <label for="phanHanh-filter">Phần hành:</label>
+                <select id="phanHanh-filter" onchange="filterProcedures()">
+                    <option value="">-- Tất cả Phần hành --</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="keyword-filter">Tìm kiếm từ khóa:</label>
+                <input type="text" id="keyword-filter" placeholder="Tìm theo tên hoặc nội dung...">
+            </div>
+            <div class="filter-actions">
+                <button onclick="filterProcedures()" class="btn-filter">Lọc</button>
+                <button onclick="resetFilters()" class="btn-reset">Xóa Lọc</button>
+            </div>
+            <div id="table-container"></div>
         </div>
     </div>
 
