@@ -1,6 +1,19 @@
 import re
 import xml.etree.ElementTree as ET
 
+def remove_markdown(text):
+    # Remove bold (**text** or __text__)
+    text = re.sub(r'\*\*([^\*]+)\*\*', r'\1', text)
+    text = re.sub(r'__([^_]+)__', r'\1', text)
+    # Remove italic (*text* or _text_)
+    text = re.sub(r'\*([^\*]+)\*', r'\1', text)
+    text = re.sub(r'_([^_]+)_', r'\1', text)
+    # Remove inline code (`code`)
+    text = re.sub(r'`([^`]+)`', r'\1', text)
+    # Remove links ([text](url)) - keep only the text
+    text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+    return text
+
 def markdown_table_to_xml(markdown_file, xml_file):
     with open(markdown_file, 'r', encoding='utf-8') as f:
         markdown_content = f.read()
@@ -46,7 +59,7 @@ def markdown_table_to_xml(markdown_file, xml_file):
             tag_name = re.sub(r'[^\w]', '', tag_name)
             
             child = ET.SubElement(procedure, tag_name)
-            child.text = columns[i]
+            child.text = remove_markdown(columns[i])
 
     tree = ET.ElementTree(root)
     ET.indent(tree, space="\t", level=0)
