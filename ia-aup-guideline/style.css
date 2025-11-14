@@ -69,3 +69,20 @@ th {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+/* Filter styles */
+#filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#filter-container select, #filter-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#keyword-filter {
+    flex-grow: 1;
+}
