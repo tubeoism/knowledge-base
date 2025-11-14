@@ -75,7 +75,7 @@ function openTab(evt, tabName) {
                                     let value = element?.childNodes[0]?.nodeValue || '';
 
                                     // Apply specific formatting for "Nội dung" if applicable
-                                    if (tag === "Noi_dung_thu_tuc") { // Assuming this is the tag for "Nội dung"
+                                    if (tag === "Nội_dung_thủ_tục") { // Assuming this is the tag for "Nội dung"
                                         value = value.replace(/Mục tiêu:/g, '<strong>Mục tiêu:</strong>')
                                                      .replace(/Nội dung:/g, '<br><strong>Nội dung:</strong>');
                                     }

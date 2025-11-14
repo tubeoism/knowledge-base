@@ -1,11 +1,5 @@
 import re
 import xml.etree.ElementTree as ET
-import unicodedata
-
-def remove_vietnamese_accents(text):
-    text = unicodedata.normalize('NFD', text)
-    text = text.encode('ascii', 'ignore').decode('utf-8')
-    return str(text)
 
 def markdown_table_to_xml(markdown_file, xml_file):
     with open(markdown_file, 'r', encoding='utf-8') as f:
@@ -48,8 +42,7 @@ def markdown_table_to_xml(markdown_file, xml_file):
         procedure = ET.SubElement(root, "Procedure")
         for i, header in enumerate(headers):
             # Create a valid XML tag name from the header
-            processed_header = remove_vietnamese_accents(header)
-            tag_name = re.sub(r'\s+', '_', processed_header)
+            tag_name = re.sub(r'\s+', '_', header)
             tag_name = re.sub(r'[^\w]', '', tag_name)
             
             child = ET.SubElement(procedure, tag_name)
