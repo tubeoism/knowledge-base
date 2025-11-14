@@ -351,6 +351,13 @@
 		<Nội_dung_thủ_tục>Mục tiêu: Đảm bảo các sai phạm đã được chỉ ra bởi cơ quan thuế được khắc phục và không tái diễn. Nội dung: Kiểm tra lịch sử và các kết luận, biên bản từ các cuộc thanh tra, kiểm tra thuế trước đây. Đánh giá cách công ty đã khắc phục các vấn đề này và thu thập bằng chứng khắc phục. Trao đổi với bộ phận phụ trách để hiểu rõ các vướng mắc hiện tại với cơ quan thuế.</Nội_dung_thủ_tục>
 	</Procedure>
 	<Procedure>
+		<STT>51</STT>
+		<Phần_hành>Thuế</Phần_hành>
+		<Số_hiệu_thủ_tục>AUP-TAX-06</Số_hiệu_thủ_tục>
+		<Tên_thủ_tục>Kiểm tra kê khai và hồ sơ giá giao dịch liên kết</Tên_thủ_tục>
+		<Nội_dung_thủ_tục>Mục tiêu: Đảm bảo việc kê khai các giao dịch với bên liên kết và lập Hồ sơ xác định giá giao dịch liên kết tuân thủ quy định. Nội dung: Kiểm tra việc xác định bên liên kết, lập và nộp Phụ lục giao dịch liên kết, Hồ sơ xác định giá giao dịch liên kết (Hồ sơ quốc gia, toàn cầu, Báo cáo lợi nhuận liên quốc gia) đúng hạn và phù hợp với quy định.</Nội_dung_thủ_tục>
+	</Procedure>
+	<Procedure>
 		<STT>52</STT>
 		<Phần_hành>Thuế</Phần_hành>
 		<Số_hiệu_thủ_tục>AUP-TAX-07</Số_hiệu_thủ_tục>
