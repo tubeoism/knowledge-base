@@ -59,9 +59,9 @@ function openTab(evt, tabName) {
                             const soHieu = procedures[i].getElementsByTagName("So_hieu_thu_tuc")[0].childNodes[0].nodeValue;
                             const tenThuTuc = procedures[i].getElementsByTagName("Ten_thu_tuc")[0].childNodes[0].nodeValue;
                             const noiDungNode = procedures[i].getElementsByTagName("Noi_dung_thu_tuc")[0];
-                            const noiDung = noiDungNode ? noiDungNode.childNodes[0].nodeValue : '';
-                            let formattedNoiDung = noiDung.replace(/Mục tiêu:/g, '<strong>Mục tiêu:</strong>');
-                            formattedNoiDung = formattedNoiDung.replace(/Nội dung:/g, '<br><strong>Nội dung:</strong>');
+                            const noiDung = noiDungNode?.childNodes[0]?.nodeValue || '';
+                            let formattedNoiDung = noiDung.replace(/Mục tiêu:/g, '<strong>Mục tiêu:</strong>')
+                                                          .replace(/Nội dung:/g, '<br><strong>Nội dung:</strong>');
                             html += `<tr><td>${phanHanh}</td><td>${soHieu}</td><td>${tenThuTuc}</td><td>${formattedNoiDung}</td></tr>`;
                         }
                         html += "</table>";
