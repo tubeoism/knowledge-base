@@ -53,18 +53,40 @@ function openTab(evt, tabName) {
                         const parser = new DOMParser();
                         const xmlDoc = parser.parseFromString(text, "application/xml");
                         const procedures = xmlDoc.getElementsByTagName("Procedure");
-                        let html = "<table><tr><th>Phân hành</th><th>Số hiệu</th><th>Tên thủ tục</th><th>Nội dung</th></tr>";
-                        for (let i = 0; i < procedures.length; i++) {
-                            const phanHanh = procedures[i].getElementsByTagName("Phan_hanh")[0].childNodes[0].nodeValue;
-                            const soHieu = procedures[i].getElementsByTagName("So_hieu_thu_tuc")[0].childNodes[0].nodeValue;
-                            const tenThuTuc = procedures[i].getElementsByTagName("Ten_thu_tuc")[0].childNodes[0].nodeValue;
-                            const noiDungNode = procedures[i].getElementsByTagName("Noi_dung_thu_tuc")[0];
-                            const noiDung = noiDungNode?.childNodes[0]?.nodeValue || '';
-                            let formattedNoiDung = noiDung.replace(/Mục tiêu:/g, '<strong>Mục tiêu:</strong>')
-                                                          .replace(/Nội dung:/g, '<br><strong>Nội dung:</strong>');
-                            html += `<tr><td>${phanHanh}</td><td>${soHieu}</td><td>${tenThuTuc}</td><td>${formattedNoiDung}</td></tr>`;
+                        let html = "";
+
+                        if (procedures.length > 0) {
+                            const firstProcedure = procedures[0];
+                            const headerTags = Array.from(firstProcedure.children).map(child => child.tagName);
+
+                            html += "<table><thead><tr>";
+                            headerTags.forEach(tag => {
+                                // Convert tag name back to a more readable format for display
+                                let displayHeader = tag.replace(/_/g, ' ');
+                                displayHeader = displayHeader.charAt(0).toUpperCase() + displayHeader.slice(1);
+                                html += `<th>${displayHeader}</th>`;
+                            });
+                            html += "</tr></thead><tbody>";
+
+                            for (let i = 0; i < procedures.length; i++) {
+                                html += "<tr>";
+                                headerTags.forEach(tag => {
+                                    const element = procedures[i].getElementsByTagName(tag)[0];
+                                    let value = element?.childNodes[0]?.nodeValue || '';
+
+                                    // Apply specific formatting for "Nội dung" if applicable
+                                    if (tag === "Noi_dung_thu_tuc") { // Assuming this is the tag for "Nội dung"
+                                        value = value.replace(/Mục tiêu:/g, '<strong>Mục tiêu:</strong>')
+                                                     .replace(/Nội dung:/g, '<br><strong>Nội dung:</strong>');
+                                    }
+                                    html += `<td>${value}</td>`;
+                                });
+                                html += "</tr>";
+                            }
+                            html += "</tbody></table>";
+                        } else {
+                            html = "<p>No procedures found in the XML file.</p>";
                         }
-                        html += "</table>";
                         contentDiv.innerHTML = html;
                     })
                     .catch(error => {
